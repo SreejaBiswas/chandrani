@@ -33,7 +33,7 @@ if st.sidebar.checkbox("Show Analysis by State", True, key=2):
     st.markdown("## **State level analysis**")
     st.markdown("### Overall Confirmed, Active, Recovered and " +
     "Deceased cases in %s yet" % (select))
-    if not st.checkbox('Hide Graph', False, key=1):
+    if not st.checkbox('Hide Graph', False, key=3):
         state_total_graph = px.bar(
         state_total, 
         x='Status',
